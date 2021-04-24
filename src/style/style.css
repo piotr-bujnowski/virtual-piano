@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+html{
+    min-height: 100%;
+    background: rgb(2,0,36);
+    background: linear-gradient(65deg, rgba(2,0,36,1) 0%, rgba(121,9,9,1) 100%);
+}
+
+body{
+    height: 90vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 700px;
+    height: 500px;
+}
+
+.key{
+    font-family: 'Permanent Marker', cursive;
+
+    flex-flow: row wrap;
+    flex-grow: 1;
+    flex-shrink: 1;
+    background-color: aliceblue;
+    border: solid black 3px;
+    height: 130px;
+    text-align: center;
+    font-size: 35px;
+    padding-top: 30px;
+    max-width: 60px;
+    min-height: 400px;
+}
+
+p{
+    cursor: default;
+    background: rgb(2,0,36);
+    background: linear-gradient(65deg, rgba(2,0,36,1) 0%, rgba(121,9,9,1) 100%);
+    background-size: 10%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
