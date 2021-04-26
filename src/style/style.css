@@ -1,51 +1,102 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
-html{
-    min-height: 100%;
-    background: rgb(2,0,36);
-    background: linear-gradient(65deg, rgba(2,0,36,1) 0%, rgba(121,9,9,1) 100%);
-}
-
-body{
-    height: 90vh;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 700px;
-    height: 500px;
-}
-
-.key{
+html {
     font-family: 'Permanent Marker', cursive;
+    min-height: 100%;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(65deg, rgba(2, 0, 36, 1) 0%, rgba(121, 9, 9, 1) 100%);
+}
 
+h1{
+    font-size: 80px;
+    color: white;
+    margin-bottom: 0;
+}
+
+h2 {
+    color: #ff0042; /*#AC032F another good color*/
+    margin-top: 0;
+    margin-bottom: 90px;
+
+}
+
+body {
+    height: 90vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 470px;
+    height: 330px;
+}
+
+.white-keys {
     flex-flow: row wrap;
     flex-grow: 1;
     flex-shrink: 1;
-    background-color: aliceblue;
+    background-color: white;
     border: solid black 3px;
-    height: 130px;
     text-align: center;
     font-size: 35px;
-    padding-top: 30px;
     max-width: 60px;
-    min-height: 400px;
+    width: 40px;
+    padding-top: 200px;
+    height: 100px;
+    z-index: 1;
 }
 
-p{
-    cursor: default;
+.black-keys {
+    position: absolute;
+    padding-top: 90px;
+    padding-bottom: 20px;
+    background-color: black;
+    height: 20px;
+    width: 28px;
+    color: white;
+    z-index: 2;
+    text-align: center;
+    top: 13px;
+}
+
+
+.w{
+    left: 56px;
+}
+
+.e{
+    left: 122px;
+}
+
+.t{
+    left: 254px;
+}
+
+.y{
+    left: 320px;
+}
+
+.u{
+    left: 387px;
+}
+
+.white-keys kbd{
     background: rgb(2,0,36);
     background: linear-gradient(65deg, rgba(2,0,36,1) 0%, rgba(121,9,9,1) 100%);
     background-size: 10%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
+}
+
+kbd {
+    font-family: 'Permanent Marker', cursive;
+    cursor: pointer;
 }
