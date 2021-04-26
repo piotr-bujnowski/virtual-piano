@@ -5,6 +5,7 @@ html {
     min-height: 100%;
     background: rgb(2, 0, 36);
     background: linear-gradient(65deg, rgba(2, 0, 36, 1) 0%, rgba(121, 9, 9, 1) 100%);
+    background-attachment: fixed;
 
     /* don't select text when double click */
     -webkit-touch-callout: none; /* iOS Safari */
@@ -19,13 +20,14 @@ h1{
     font-size: 80px;
     color: white;
     margin-bottom: 0;
+    cursor: pointer;
 }
 
 h2 {
     color: #ff0042; /*#AC032F another good color*/
     margin-top: 0;
     margin-bottom: 90px;
-
+    text-shadow: 2px 1px 10px #000000;
 }
 
 body {
@@ -117,5 +119,10 @@ body {
 
 kbd {
     font-family: 'Permanent Marker', cursive;
+}
 
+.author{
+    text-align: left;
+    margin-top: 90px;
+    margin-bottom: 0;
 }
