@@ -5,6 +5,14 @@ html {
     min-height: 100%;
     background: rgb(2, 0, 36);
     background: linear-gradient(65deg, rgba(2, 0, 36, 1) 0%, rgba(121, 9, 9, 1) 100%);
+
+    /* don't select text when double click */
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
 }
 
 h1{
@@ -109,4 +117,5 @@ body {
 
 kbd {
     font-family: 'Permanent Marker', cursive;
+
 }
